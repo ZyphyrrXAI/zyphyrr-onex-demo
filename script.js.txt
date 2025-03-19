@@ -1,0 +1,18 @@
+// script.js
+
+document.getElementById("start-demo").addEventListener("click", function() {
+    const output = document.getElementById("output");
+    output.innerHTML = "<p class='loading'>Initializing Zyphyrr OneX AI...</p>";
+
+    // Play AI boot-up sound
+    const audio = new Audio("ai-bootup.wav");
+    audio.play();
+
+    setTimeout(() => {
+        output.innerHTML += "<p class='activated'>AI Activated. Ready for interaction.</p>";
+    }, 2000);
+});
+
+document.getElementById("github-link").addEventListener("click", function() {
+    window.open("https://github.com/YourUsername/YourRepository", "_blank");
+});
